@@ -18,5 +18,14 @@ public class FizzBuzzTest {
 	public void testAllwaysReturnsString() {
 		Assert.assertEquals("1", fizzBuzz.play(1));
 	}
+	
+	@Test
+	public void testFizz() {
+		Assert.assertEquals("Fizz", fizzBuzz.play(3));
+	}
 
+	@Test
+	public void testFizzDivisiableBy3() {
+		Assert.assertEquals("Fizz", fizzBuzz.play(6));
+	}
 }
