@@ -38,4 +38,9 @@ public class FizzBuzzTest {
 	public void testBuzzDivisiableBy5() {
 		Assert.assertEquals("Buzz", fizzBuzz.play(20));
 	}
+	
+	@Test
+	public void testFizzBuzz() {
+		Assert.assertEquals("FizzBuzz", fizzBuzz.play(15));
+	}
 }
