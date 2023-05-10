@@ -28,4 +28,14 @@ public class FizzBuzzTest {
 	public void testFizzDivisiableBy3() {
 		Assert.assertEquals("Fizz", fizzBuzz.play(6));
 	}
+	
+	@Test
+	public void testBuzz() {
+		Assert.assertEquals("Buzz", fizzBuzz.play(5));
+	}
+
+	@Test
+	public void testBuzzDivisiableBy5() {
+		Assert.assertEquals("Buzz", fizzBuzz.play(20));
+	}
 }
