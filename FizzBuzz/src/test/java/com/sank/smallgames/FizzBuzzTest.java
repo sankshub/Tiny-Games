@@ -18,7 +18,7 @@ public class FizzBuzzTest {
 	public void testAllwaysReturnsString() {
 		Assert.assertEquals("1", fizzBuzz.play(1));
 	}
-	
+
 	@Test
 	public void testFizz() {
 		Assert.assertEquals("Fizz", fizzBuzz.play(3));
@@ -28,7 +28,7 @@ public class FizzBuzzTest {
 	public void testFizzDivisiableBy3() {
 		Assert.assertEquals("Fizz", fizzBuzz.play(6));
 	}
-	
+
 	@Test
 	public void testBuzz() {
 		Assert.assertEquals("Buzz", fizzBuzz.play(5));
@@ -38,9 +38,14 @@ public class FizzBuzzTest {
 	public void testBuzzDivisiableBy5() {
 		Assert.assertEquals("Buzz", fizzBuzz.play(20));
 	}
-	
+
 	@Test
 	public void testFizzBuzz() {
 		Assert.assertEquals("FizzBuzz", fizzBuzz.play(15));
+	}
+
+	@Test
+	public void testFizzBuzzWithEmpty() {
+		Assert.assertEquals("Not a Number", fizzBuzz.play(null));
 	}
 }
